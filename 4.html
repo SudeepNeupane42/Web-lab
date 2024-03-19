@@ -1,0 +1,40 @@
+<!----Implement an HTML image gallery with at least four images displayed in a grid layout.-->
+< html>
+
+    <head>
+        <title>Animal album</title>
+        <style>
+            .photo {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .photo img {
+                width: 100%;
+                height: auto;
+                display: block;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgb(0, 0, 0);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .photo img:hover {
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="photo">
+            <img src="panda.jpg" alt="Panda">
+            <img src="penguin.webp" alt="Penguin">
+            <img src="Stingray.jpg" alt="Stingray">
+            <img src="rhino.webp" alt="Rhino">
+        </div>
+
+    </body>
+
+    </html>

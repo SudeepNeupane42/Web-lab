@@ -1,0 +1,61 @@
+<!-- Implement CSS code to create a responsive layout using media queries for different screen 
+sizes -->
+< html>
+
+    <head>
+        <title>Responsive Layout</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .container {
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .box {
+                background-color: #f0f0f0;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            /* Media queries for different screen sizes */
+            @media only screen and (min-width: 768px) {
+
+                /* For tablets and larger devices */
+                .container {
+                    width: 70%;
+                }
+            }
+
+            @media only screen and (min-width: 992px) {
+
+                /* For small desktops and larger devices */
+                .container {
+                    width: 50%;
+                }
+            }
+
+            @media only screen and (min-width: 1200px) {
+
+                /* For large desktops and larger devices */
+                .container {
+                    width: 40%;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="box">
+                <h2>Box 1</h2>
+                <p>This is box 1 content.</p>
+            </div </div>
+    </body>
+
+    </html>
