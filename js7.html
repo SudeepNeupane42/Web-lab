@@ -1,0 +1,35 @@
+<!-- Implement a function in JavaScript to remove duplicate elements from an array and return
+the modified array. -->
+<html>
+
+<head>
+    <title>Remove Duplicate Elements</title>
+</head>
+
+<body>
+    <h2>Original Array</h2>
+    <div id="originalArray"></div>
+
+    <h2>modefied Array</h2>
+    <div id="modefiedArray"></div>
+
+    <script>
+        function removeDuplicates(arr) {
+            let modefiedElements = {};
+            for (let i = 0; i < arr.length; i++) {
+                modefiedElements[arr[i]] = true;
+            }
+            return Object.keys(modefiedElements);
+        }
+
+        let array = [1, 2, 3, 4, 2, 3, 5];
+
+        document.getElementById('originalArray').innerText = array.join(', ');
+
+        let modefiedArray = removeDuplicates(array);
+
+        document.getElementById('modefiedArray').innerText = modefiedArray.join(', ');
+    </script>
+</body>
+
+</html>

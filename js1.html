@@ -1,12 +1,27 @@
-<!-- 3. Implement a for loop in JavaScript to output numbers from 1 to 10 to the browser console. -->
-< html>
+<!-- 1. Implement JavaScript code to check if a given number is even or odd using if-else
+statements and output the result. -->
+<html>
 
-    <head>
-        <title>Document</title>
-    </head>
+<head>
+    <title>Document</title>
+</head>
 
-    <body>
+<body>
+    <input type="text" id="numberInput">
+    <button onclick="checkNumber()">Check Number</button>
+    <p id="result"></p>
 
-    </body>
+    <script>
+        function checkNumber() {
+            var num = document.getElementById("numberInput").value;
+            if (num % 2 == 0) {
+                document.write("The number " + num + " is Even");
+            }
+            else {
+                document.write("the number is odd")
+            }
+        }
+    </script>
+</body>
 
-    </html>
+</html>

@@ -1,0 +1,25 @@
+<!-- Write JavaScript code to get the current date and time and display it in a human-readable
+format. -->
+
+<html>
+
+<head>
+    <title>Display Current Date and Time</title>
+</head>
+
+<body>
+    <div id="currentDateTime"></div>
+
+    <script>
+        let currentDate = new Date();
+
+        let date = currentDate.toLocaleDateString();
+        let time = currentDate.toLocaleTimeString();
+
+        let dateTimeString = `Current Date and Time: ${date}, ${time}`;
+
+        document.getElementById('currentDateTime').innerText = dateTimeString;
+    </script>
+</body>
+
+</html>

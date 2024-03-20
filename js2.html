@@ -1,0 +1,36 @@
+<!-- 2. Write JavaScript code to implement a switch-case statement that outputs a message based
+on the value of a variable. -->
+
+<html>
+
+<head>
+    <title>Switch-Case Statement Example</title>
+</head>
+
+<body>
+    <div id="output"></div>
+
+    <script>
+        const variableValue = "B";
+
+        let message;
+        switch (variableValue) {
+            case "A":
+                message = "Variable value is A";
+                break;
+            case "B":
+                message = "Variable value is B";
+                break;
+            case "C":
+                message = "Variable value is C";
+                break;
+            default:
+                message = "Variable value is not A, B, or C";
+        }
+
+        var outputDiv = document.getElementById("output");
+        outputDiv.innerHTML = message;
+    </script>
+</body>
+
+</html>

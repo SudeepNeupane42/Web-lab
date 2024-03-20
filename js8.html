@@ -1,0 +1,24 @@
+<!-- Write JavaScript code to sort an array of strings in alphabetical order and output the sorted
+array. -->
+<html>
+
+<head>
+    <title>Sort Array of Strings</title>
+</head>
+
+<body>
+    <h2>Original Array</h2>
+    <div id="originalArray"></div>
+
+    <h2>Sorted Array</h2>
+    <div id="sortedArray"></div>
+
+    <script>
+        let stringsArray = ["banana", "apple", "orange", "grape", "kiwi"];
+        document.getElementById('originalArray').innerText = stringsArray.join(', ');
+        stringsArray.sort();
+        document.getElementById('sortedArray').innerText = stringsArray.join(', ');
+    </script>
+</body>
+
+</html>
